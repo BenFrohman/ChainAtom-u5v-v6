@@ -104,14 +104,30 @@ $W+z^2$ is a three-variable germ with $\mu=25\cdot 1=25$. That is the object to 
 
 Not a disproof of the rational Hodge conjecture. Not a Fourier–Mukai fourfold partner $Y$. Not an identification $\mu=|\det A|$. Lean checks of the two cardinalities $25$ and $26$ are `native_decide` counts of standard monomials (`lean/MilnorCount.lean` on SingularityLab).
 
-## 8. Machine-readable tables
+## 8. Names, conversion, and machine-readable tables
 
-Locked names and counts as CSV on the companion lab:
+Thirty is derived correctly as $\det A$. It becomes the wrong name only when it is called the Milnor number.
 
-- [docs/tables/names.csv](https://github.com/BenFrohman/SingularityLab/blob/main/docs/tables/names.csv) — $30=|\det A|=|\mathrm{Aut}|$; $25=\mu=\dim J_W$
-- [docs/tables/counts.csv](https://github.com/BenFrohman/SingularityLab/blob/main/docs/tables/counts.csv) — $W$, $W^T$, $F$
-- [docs/tables/meaning.csv](https://github.com/BenFrohman/SingularityLab/blob/main/docs/tables/meaning.csv) — BHK keeps Aut, not $\mu$
-- Prose lock: [docs/DET_VS_MU.md](https://github.com/BenFrohman/SingularityLab/blob/main/docs/DET_VS_MU.md)
+| integer | actual name |
+|---|---|
+| $30$ | $\lvert\det A\rvert=\lvert\mathrm{Aut}(W)\rvert$ |
+| $25$ | $\mu(W)=\dim J_W$ |
+
+The extra leading term $u^4v$ kills $u^4v,\,u^4v^2,\,u^4v^3,\,u^4v^4,\,u^4v^5$ in the $5\times 6$ box, so $30-5=25$. Conversion on this chain ($q=6$):
+
+$$
+\mu=\lvert\det A\rvert\cdot\bigl(1-1/q\bigr)=30\cdot\tfrac56=25.
+$$
+
+| | $\lvert\det A\rvert$ | $\mu$ |
+|---|---|---|
+| Meaning | diagonal symmetry order / exponent volume | Jacobian dimension / vanishing cycles |
+| This $W$ | $30$ | $25$ |
+| This $W^T$ | $30$ | $26$ |
+| Three-block $F$ | $30^3=27000$ | $25^3=15625$ |
+| Preserved by BHK transpose? | yes | no |
+
+CSV keys live on the lab: [docs/tables/](https://github.com/BenFrohman/SingularityLab/tree/main/docs/tables). Prose lock: [DET_VS_MU.md](https://github.com/BenFrohman/SingularityLab/blob/main/docs/DET_VS_MU.md).
 
 ## References
 
