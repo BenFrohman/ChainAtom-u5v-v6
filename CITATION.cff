@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1"
+message: "If you use this note, please cite it."
+type: article
+authors:
+  - family-names: Frohman
+    given-names: Benjamin Stanley
+    alias: BenFrohman
+license: Apache-2.0
+license-url: https://www.apache.org/licenses/LICENSE-2.0
+repository-code: https://github.com/BenFrohman/ChainAtom-u5v-v6
+url: https://github.com/BenFrohman/ChainAtom-u5v-v6
+date-released: "2026-09-25"
+abstract: >
+  Isolated invertible plane-curve singularity W=u^5v+v^6.
+  μ(W)=25, |Aut(W)|=30, μ(W^T)=26. Three copies give the locked sextic F.
+  Not a Hodge miss.

@@ -1,0 +1,35 @@
+{
+  "title": "The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1",
+  "description": "Isolated invertible plane-curve singularity W=u^5v+v^6. Records μ(W)=25 versus |Aut(W)|=30, the Berglund-Hübsch transpose W^T with μ=26, Steenbrink spectra, monodromy characteristic polynomials, and the Thom-Sebastiani product of three copies. Not a Hodge miss.",
+  "creators": [
+    {
+      "name": "Frohman, Benjamin Stanley",
+      "affiliation": "independent"
+    }
+  ],
+  "keywords": [
+    "invertible polynomial",
+    "Berglund-Hübsch",
+    "Milnor number",
+    "monodromy zeta",
+    "chain singularity",
+    "Thom-Sebastiani"
+  ],
+  "license": "Apache-2.0",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "communities": [],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/BenFrohman/ChainAtom-u5v-v6",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/BenFrohman/SingularityLab",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ]
+}
