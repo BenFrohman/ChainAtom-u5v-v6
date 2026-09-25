@@ -1,118 +1,129 @@
-# Applications, safety, and a two-track roadmap
+# Applications, safety, and a two-lane roadmap
 
-**Author:** Benjamin Stanley Frohman (@BenFrohman)  
-**Copyright:** (c) 2026 Benjamin Stanley Frohman  
-**License:** Apache-2.0
+Author: Benjamin Stanley Frohman (@BenFrohman)
+Copyright (c) 2026 Benjamin Stanley Frohman. Apache-2.0.
+Companion preprint: PREPRINT.md on this repository.
 
-This file is attached to the ChainAtom preprint. It separates three layers
-that must not be mixed.
+## Stark reality first
 
-1. What the object *is*.
-2. What can actually be done with that object.
-3. Two analog tracks (AI; materials / polymer physics) that share a *name
-   pattern*, not an identity.
+$W=u^5v+v^6$ is a **polynomial**. It is an isolated plane-curve singularity
+of invertible chain type. The numbers $\mu=25$, $|\mathrm{Aut}|=30$,
+$\mu(W^T)=26$, $\hat{c}=4/3$, and $\Delta_W(t)=(t^6-1)^4(t-1)$ are
+**local analytic invariants**. That is what is in hand.
 
----
+It is **not**:
+- a physical atomic chain (carbyne, a 1D molecular wire, a polymer backbone);
+- an AI checkpoint whose version tag happens to look like `u5v` / `v6`;
+- a Hodge class on the fourfold $V(F)$;
+- a recipe for a material, a drug, or a device.
 
-## Stark reality
+What can actually be done with it, today:
+1. Feed $(W,G)$ and $(W^T,G^T)$ into existing Berglund–Hübsch, FJRW, and
+   homological-mirror pipelines as a worked two-variable example.
+2. Use three Thom–Sebastiani copies as the local model of the locked
+   sextic $F$.
+3. Suspend to $W+z^2$ and only then ask Ebeling–Gusein-Zade / strange
+   duality questions that require three variables.
+4. Teach the $\mu\neq|\det A|$ distinction so the two integers stop being
+   merged.
 
-`ChainAtom` here is the isolated plane-curve germ
-
-    W = u^5 v + v^6,     μ(W) = 25,     |Aut(W)| = 30,
-    W^T = u^5 + u v^6,   μ(W^T) = 26.
-
-It is a quasihomogeneous invertible polynomial. It is not carbyne, not a
-1D molecular wire, not a polymer, not a battery anode, and not an LLM
-checkpoint tagged `u5v` / `v6`.
-
-What this note **can** do:
-
-- correct a bookkeeping error (|Aut| was labeled μ)
-- feed FJRW / LG state-space calculations for this chain block
-- feed monodromy-zeta and spectrum calculations (already written)
-- serve as a Thom–Sebastiani atom inside the sextic F
-- teach BHK transpose on a single explicit pair
-
-What this note **cannot** do:
-
-- prove or disprove rational Hodge on fourfolds
-- produce a Fourier–Mukai partner Y of V(F)
-- design a semiconductor, a drug, or a toxin
-- move electrons ballistically
-- fold a protein
-- replace laboratory synthesis or toxicology
-
-If a later project uses the *string* `u5v-v6` as a model name, that
-project is a different object and needs its own safety file.
+That is the ceiling of the present object. Everything below is a
+**roadmap**, not a result.
 
 ---
 
-## Track A — AI and neural networks (analog, not identity)
+## Lane 1 — AI and neural networks (analogical, not a trained model)
 
-Long tokens such as `u5v` or `v6` do appear as checkpoint names and as
-embedding codes. A model that *ingested* this germ could, in principle,
-be asked to predict Jacobian dimensions, spectra, or FJRW numbers for
-other invertible polynomials.
+The token string `u5v-v6` looks like a checkpoint name. It is not one.
+A responsible AI program *around* this atom would treat the germ as
+**structured data**, not as a black-box generator.
 
-**Possible uses if such a model is trained on invertible singularities**
+### Possible programs
+- Supervised invariants: train a graph/polynomial network to predict
+  $(\mu,|\mathrm{Aut}|,\hat{c},\Delta(t))$ from exponent matrices of
+  invertible singularities, with this pair as a labeled test case
+  ($25$ vs $30$ is the trap).
+- Search: enumerate Kreuzer–Skarke atoms and flag chain pairs with
+  $\mu(W^T)=\mu(W)+1$.
+- Language-to-geometry: map informal notes (“Fermat block”, “chain
+  block”) onto exponent matrices so the $\mu$/Aut split is not lost
+  again.
+- HMS aid: use the computed spectrum as a check against Floer / matrix-
+  factorization computations (Cho–Choa–Jeong and related HMS-for-curves
+  work), not as a replacement for them.
 
-- fast lookup of μ, |Aut|, ĉ, and leading ideals for chain / loop / Fermat atoms
-- generating candidate BHK pairs and checking the +1-type μ shift
-- assisting formalization (Lean statements like `mu_W` / `mu_WT`)
+### Usefulness
+Speed of classification. Error-catching on published tables. A unit test
+for any “singularity oracle.”
 
-**Safety**
-
-- Hallucination: a model that emits μ = 30 for W is repeating the error
-  this note exists to kill. Treat model output as a conjecture until a
-  Gröbner basis or `native_decide` check exists.
-- Dual-use: general molecular-generation models can propose toxic or
-  weaponizable compounds. This germ is not a molecule, but any pipeline
-  that *turns polynomials into chemical graphs* inherits that hazard.
-  Do not connect this repo to an unconstrained generator. Human review
-  before any wet-lab suggestion. No automated synthesis loop.
-- Provenance: keep the mathematical object and any ML checkpoint in
-  separate repositories so a version tag cannot be mistaken for a proof.
-
-**Roadmap (AI)**
-
-1. Dataset of invertible germs with verified (μ, Aut, ĉ, Δ(t)).
-2. Supervised predictor with a Lean verifier in the loop.
-3. Refusal layer: no SMILES / PDB output from this track.
-4. Audit log of every predicted integer against a computer-algebra oracle.
-
----
-
-## Track B — materials / polymer physics (analog, not identity)
-
-Literal atomic chains (carbyne, 1D wires, conjugated polymers) are a
-different science. Insights there concern 1D electron transport and
-tensile strength. Usefulness, if that science succeeds, is in
-semiconductors, anodes, and nanomaterials.
-
-**Safety (this track, if ever pursued as materials work)**
-
-- Nanotoxicity: high-aspect-ratio carbon chains and related particles
-  can cross membranes and the blood-brain barrier. Inhalation and skin
-  exposure are the default hazards. Cleanroom or glovebox. No dry
-  powder work without containment. Medical surveillance if a lab is
-  stood up.
-- This preprint does **not** authorize a materials experiment. There is
-  no synthesis protocol in this repository.
-- Do not cite μ(W)=25 as a tensile modulus or a band gap.
-
-**Roadmap (materials) — only if a separate lab is funded**
-
-1. Literature review of actual carbyne / polyyne stability. Not this germ.
-2. Independent ethics and tox screen before any synthesis proposal.
-3. No shared filename with the singularity shelf.
+### Dangers and cautions (AI lane)
+- Hallucination: a model that emits a zeta polynomial is not a proof.
+  Kernel checks (`lean/MilnorCount.lean`) and Groebner bases stay in
+  front of the network.
+- Bias: training on Fermat examples will overfit $|\det A|=\mu$, which
+  is false for this chain.
+- Dual-use of *chemical* generative models is a real class of risk in
+  the wider field. **This germ does not design molecules.** Do not wire
+  an unconstrained molecular generator to this repository and call it
+  “ChainAtom chemistry.” No synthesis routes, no agent designs, no
+  target lists belong here.
 
 ---
 
-## What to do next on the real object
+## Lane 2 — Advanced materials / polymer physics (analogical, not a sample)
 
-1. Deposit the preprint on Zenodo (DOI is not minted by GitHub).
-2. Keep computing 2-variable facts: spectrum of W^T already listed;
-   Saito identity still not claimed.
-3. If strange duality is wanted, work on the named 3-variable germ
-   W+z^2 as a *different* paper.
-4. Do not move these files into HODGE as a miss class.
+Laboratories that study literal atomic chains — carbyne, 1D wires,
+conjugated polymers — use the words “chain” and “atom” for matter.
+Our $W$ uses them for a Newton polygon. Do not mix the two.
+
+### Honest adjacency
+Landau–Ginzburg potentials *do* appear as effective models for some
+condensed-matter and string compactifications. That does not make
+$W=u^5v+v^6$ a recipe for ballistic transport or an anode. Extreme
+tensile strength, room-temperature 1D conduction, and nanotoxicity are
+properties of **physical samples**, measured in labs with containment,
+not properties of a Jacobian algebra.
+
+### Possible programs (theory only)
+- Catalog which invertible atoms have been used as LG superpotentials
+  in existing string / Gepner-style compactifications, and place this
+  chain on that list with the correct $\hat{c}=4/3$ (two-variable) or
+  $\hat{c}=4$ (three-copy fourfold $F$).
+- Keep polymer and carbyne literature on a **separate shelf**. If a
+  later collaboration wants a 1D-material model, start from measured
+  Hamiltonians, not from $A=\begin{pmatrix}5&1\\0&6\end{pmatrix}$.
+
+### Dangers and cautions (materials lane)
+Nanotoxicity is a documented hazard of real nanoscale chains and
+particles: inhalation, membrane crossing, systemic exposure. That
+hazard attaches to **handling matter**, not to editing this markdown.
+If a future project ever moves from the polynomial to a physical 1D
+wire, it needs cleanroom / fume-hood protocol, waste control, and a
+separate safety review. This repository does not authorize that step.
+
+---
+
+## Safety measures that apply now
+
+1. Keep the object labeled: *invertible plane-curve germ*, not material,
+   not model weights.
+2. Keep $\mu$ and $|\mathrm{Aut}|$ in different columns.
+3. Do not deposit a “Hodge disproof” that uses $W$ as $\gamma_{\mathrm{bad}}$.
+4. Dual-use gate: refuse requests that ask this project to generate or
+   optimize harmful chemical or biological agents. High-level warning
+   only; no methods.
+5. AI outputs that touch invariants must be checked by Groebner / Lean
+   before they are written as theorems.
+6. Zenodo deposit of PREPRINT.md is a paper deposit, not a materials
+   data sheet and not a model card for a generator.
+
+## What would count as a next real result
+
+- Computed Saito dual of $\tilde\zeta_W$ after suspension $W+z^2$.
+- An HMS comparison (Fukaya / matrix factorizations) that uses the
+  $\Delta_W$ written in the preprint as a numerical check.
+- A Kreuzer–Skarke table row in which this chain is not mis-labeled
+  $\mu=30$.
+
+Anything else is speculation. Speculation is allowed on a roadmap.
+It is not allowed to overwrite the germ.
