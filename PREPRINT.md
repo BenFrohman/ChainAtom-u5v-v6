@@ -38,7 +38,7 @@ $$
 (v^6,\;u^5+6v^5,\;u^4v).
 $$
 
-Standard monomials, twenty-five:
+Real leading terms of $W$: $v^6$, $u^5$, $u^4v$. Standard monomials, twenty-five:
 
 $$
 \{v^j,\ uv^j,\ u^2v^j,\ u^3v^j:\ j=0,\ldots,5\}\ \cup\ \{u^4\}.
@@ -53,7 +53,13 @@ W^T=u^5+uv^6,\qquad
 A^T=\begin{pmatrix}5&0\\1&6\end{pmatrix}.
 $$
 
-Weights $(3,2)$, degree $15$, same $\hat{c}=4/3$, same $|\mathrm{Aut}|=30$. Groebner basis $(uv^5,\,v^6+5u^4,\,u^5)$. Standard monomials, twenty-six. Quasihomogeneous check: $(15/3-1)(15/2-1)=26$. Bookkeeping:
+Weights $(3,2)$, degree $15$, same $\hat{c}=4/3$, same $|\mathrm{Aut}|=30$. Isolated leading terms of $W^T$: $u^4$, $uv^5$, $v^{11}$. Standard monomials, twenty-six:
+
+$$
+\{v^0,\ldots,v^{10}\}\cup\{u,u^2,u^3\}\times\{v^0,\ldots,v^4\}.
+$$
+
+Quasihomogeneous check: $(15/3-1)(15/2-1)=26$. Bookkeeping:
 
 $$
 F=+1:\ W\mapsto W^T,\ \mu\mapsto\mu+1,\qquad
@@ -61,6 +67,8 @@ F=-1:\ W^T\mapsto W,\ \mu\mapsto\mu-1.
 $$
 
 A sign flip $-W$ is a different operation and does not change $\mu$. The affine fiber $W=-1$ is a Milnor fiber, homotopy-equivalent to a bouquet of $25$ circles. Compactification $X^5Y+Y^6+Z^6=0$ is a smooth plane sextic (genus $10$) minus six points at infinity; Euler characteristic $1-25=-24$ matches.
+
+A `grlex` printed basis $(uv^5,\,5u^4+v^6,\,u^5)$ hides $v^{11}$. That list is not the full set of isolated leading terms. See §9.
 
 ## 4. Spectrum and monodromy
 
@@ -128,6 +136,41 @@ $$
 | Preserved by BHK transpose? | yes | no |
 
 CSV keys live on the lab: [docs/tables/](https://github.com/BenFrohman/SingularityLab/tree/main/docs/tables). Prose lock: [DET_VS_MU.md](https://github.com/BenFrohman/SingularityLab/blob/main/docs/DET_VS_MU.md).
+
+## 9. Why a computer printed 31 and 35, and why those are not $\mu$
+
+The numbers $31$ and $35$ were produced. They are not calculation errors. They are the number of monomials inside a finite box that survive reduction against an *incomplete* leading-term list.
+
+Real isolated leading terms of $W^T$ are three:
+
+$$
+u^4,\qquad uv^5,\qquad v^{11}.
+$$
+
+Identity (independent of monomial order):
+
+$$
+v^5(5u^4+v^6)-5u^3(uv^5)=v^{11}.
+$$
+
+If $v^{11}$ is dropped, the $v$-axis is unbounded. A box of side $N$ against $\{u^4,uv^5\}$ only counts
+
+$$
+N + 3\cdot 5 = N+15.
+$$
+
+| box side $N$ | printed count | what it is |
+|---|---|---|
+| 8 | 23 | $8+15$ |
+| 12 | 27 | $12+15$ |
+| 16 | 31 | $16+15$ |
+| 20 | 35 | $20+15$ |
+
+$31$ is the $16\times16$ box. $35$ is the $20\times20$ box. Both grow if you enlarge the box. $\mu$ does not grow.
+
+Put $v^{11}$ back: $N$ is replaced by $11$, and $11+15=26$. That $26$ is also the weighted product and the intersection number $6+20$. Lex order prints $v^{11}$ as a Groebner leading term. Grlex does not print it, even though the identity puts it in the ideal.
+
+Full investigation with every printed Groebner basis: [MU_INVESTIGATION.md](https://github.com/BenFrohman/SingularityLab/blob/main/docs/MU_INVESTIGATION.md).
 
 ## References
 
