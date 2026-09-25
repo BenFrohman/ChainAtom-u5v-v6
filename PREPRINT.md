@@ -104,6 +104,15 @@ $W+z^2$ is a three-variable germ with $\mu=25\cdot 1=25$. That is the object to 
 
 Not a disproof of the rational Hodge conjecture. Not a Fourier–Mukai fourfold partner $Y$. Not an identification $\mu=|\det A|$. Lean checks of the two cardinalities $25$ and $26$ are `native_decide` counts of standard monomials (`lean/MilnorCount.lean` on SingularityLab).
 
+## 8. Machine-readable tables
+
+Locked names and counts as CSV on the companion lab:
+
+- [docs/tables/names.csv](https://github.com/BenFrohman/SingularityLab/blob/main/docs/tables/names.csv) — $30=|\det A|=|\mathrm{Aut}|$; $25=\mu=\dim J_W$
+- [docs/tables/counts.csv](https://github.com/BenFrohman/SingularityLab/blob/main/docs/tables/counts.csv) — $W$, $W^T$, $F$
+- [docs/tables/meaning.csv](https://github.com/BenFrohman/SingularityLab/blob/main/docs/tables/meaning.csv) — BHK keeps Aut, not $\mu$
+- Prose lock: [docs/DET_VS_MU.md](https://github.com/BenFrohman/SingularityLab/blob/main/docs/DET_VS_MU.md)
+
 ## References
 
 1. M. Kreuzer, H. Skarke, *On the classification of quasihomogeneous functions*, Commun. Math. Phys. 150 (1992).
