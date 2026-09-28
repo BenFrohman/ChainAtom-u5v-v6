@@ -1,0 +1,3 @@
+germ,generator,order,aut_order,index
+W, (zeta6, zeta6),6,30,5
+WT, (zeta5, zeta15^2),15,30,2
