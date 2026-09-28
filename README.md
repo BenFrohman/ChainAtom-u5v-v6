@@ -34,6 +34,17 @@ Transpose block (one summand of F^T):
 
 BHK keeps |Aut| and ĉ. It shifts μ by +1.
 
+## Monodromy index
+
+The Milnor monodromy is cyclic. Both groups Aut(W) and Aut(W^T) are cyclic of order 30.
+
+| germ | monodromy order | index in Aut |
+|---|---|---|
+| W | 6 | 5 |
+| W^T | 15 | 2 |
+
+Details, eigenvalue multiplicities, and the warning that this is not an index in the orthogonal group of H^4(V(F)): [docs/MONODROMY_INDEX.md](docs/MONODROMY_INDEX.md).
+
 ## What applies
 
 - Fan–Shen: FJRW quantum ring of X^p + X Y^q ≃ Milnor ring of the dual.
