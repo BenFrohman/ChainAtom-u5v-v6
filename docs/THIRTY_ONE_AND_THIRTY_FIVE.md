@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # What 31 and 35 are
 
 Author: Benjamin Stanley Frohman. © 2026. Apache-2.0.
