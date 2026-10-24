@@ -1,7 +1,8 @@
 # The chain atom $W=u^5v+v^6$: Milnor number, diagonal symmetries, and the Berglund–Hübsch transpose
 
 **Author:** Benjamin Stanley Frohman  
-**Affiliation:** independent  
+**ORCID:** [0009-0006-7068-3718](https://orcid.org/0009-0006-7068-3718)  
+**Affiliation:** Independent Researcher  
 **X:** [@Investor0x](https://x.com/Investor0x)  
 **GitHub:** [@BenFrohman](https://github.com/BenFrohman)  
 **Date:** 25 September 2026  

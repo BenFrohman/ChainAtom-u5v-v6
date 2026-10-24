@@ -1,25 +1,27 @@
 {
   "title": "The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1",
-  "description": "Isolated invertible plane-curve singularity W=u^5v+v^6. Records μ(W)=25 versus |Aut(W)|=30, the Berglund-Hübsch transpose W^T with μ=26, Steenbrink spectra, monodromy characteristic polynomials, and the Thom-Sebastiani product of three copies. Not a Hodge miss.",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-09-25",
+  "version": "1.0.0",
   "creators": [
     {
       "name": "Frohman, Benjamin Stanley",
-      "affiliation": "independent"
+      "orcid": "0009-0006-7068-3718",
+      "affiliation": "Independent Researcher"
     }
   ],
-  "keywords": [
-    "invertible polynomial",
-    "Berglund-Hübsch",
-    "Milnor number",
-    "monodromy zeta",
-    "chain singularity",
-    "Thom-Sebastiani"
-  ],
-  "license": "Apache-2.0",
-  "upload_type": "publication",
-  "publication_type": "preprint",
+  "description": "Isolated invertible plane-curve singularity W=u^5v+v^6. Distinguishes the order of the maximal diagonal symmetry group |Aut(W)| = |det A| = 30 from the Milnor number mu(W) = 25 (dimension of the Jacobian algebra). Computes the Berglund-Hubsch transpose W^T = u^5 + uv^6 with mu(W^T) = 26 = mu(W) + 1, Steenbrink spectra, and monodromy characteristic polynomials Delta_W(t) = (t^6 - 1)^4(t - 1) and Delta_{W^T}(t). Explains why incomplete grlex leading-term lists in a finite box produce 31 and 35 instead of 26. Does not claim a rational Hodge miss on the fourfold V(F).",
   "access_right": "open",
-  "communities": [],
+  "license": "Apache-2.0",
+  "keywords": [
+    "singularity theory",
+    "Milnor number",
+    "Berglund-Hubsch transpose",
+    "invertible polynomial",
+    "Steenbrink spectrum",
+    "monodromy"
+  ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/BenFrohman/ChainAtom-u5v-v6",
@@ -28,7 +30,7 @@
     },
     {
       "identifier": "https://github.com/BenFrohman/SingularityLab",
-      "relation": "isSupplementedBy",
+      "relation": "isSupplementTo",
       "scheme": "url"
     }
   ]

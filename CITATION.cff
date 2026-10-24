@@ -5,11 +5,13 @@ type: article
 authors:
   - family-names: Frohman
     given-names: Benjamin Stanley
+    orcid: "https://orcid.org/0009-0006-7068-3718"
     alias: BenFrohman
 license: Apache-2.0
 license-url: https://www.apache.org/licenses/LICENSE-2.0
 repository-code: https://github.com/BenFrohman/ChainAtom-u5v-v6
 url: https://github.com/BenFrohman/ChainAtom-u5v-v6
+version: "1.0.0"
 date-released: "2026-09-25"
 abstract: >
   Isolated invertible plane-curve singularity W=u^5v+v^6.

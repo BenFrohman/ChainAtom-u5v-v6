@@ -1,0 +1,131 @@
+% Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
+% Released under Apache 2.0 license as described in the file LICENSE.
+% Authors: Benjamin Stanley Frohman
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref}
+\usepackage[margin=1.15in]{geometry}
+
+\title[The Chain Atom $W=u^5v+v^6$]{The Chain Atom $W=u^5v+v^6$: Milnor Number 25, Diagonal Symmetry 30, and the Transpose Shift $+1$}
+\author{Benjamin Stanley Frohman}
+\address{Independent Researcher \\ ORCID: 0009-0006-7068-3718}
+\email{frohmanbenjamin@gmail.com}
+\date{September 25, 2026}
+
+\begin{document}
+
+\begin{abstract}
+Let $W(u,v)=u^5v+v^6$. This is an isolated invertible plane-curve singularity of chain type. Two integers that sit next to each other in the exponent matrix were conflated in earlier notes: the order of the maximal diagonal symmetry group is $|\det A|=30$, while the Milnor number---the dimension of the Jacobian algebra---is $\mu(W)=25$. The Berglund--H\"ubsch transpose $W^T=u^5+uv^6$ has the same symmetry order $|\mathrm{Aut}(W^T)|=30$ and the same central charge $\hat{c}=4/3$, but Milnor number $\mu(W^T)=26=\mu(W)+1$. Three disjoint Thom--Sebastiani copies of $W$ reconstruct the sextic
+\[
+  F=x_0^5x_3+x_3^6+x_1^5x_4+x_4^6+x_2^5x_5+x_5^6,
+\]
+with $\mu(F)=25^3=15625$ and $|\mathrm{Aut}(F)|=30^3=27000$. Steenbrink spectra and monodromy characteristic polynomials are computed from the standard monomials of the Jacobian ideals. This note records those computations; it does not claim a rational Hodge miss on the fourfold $V(F)$.
+\end{abstract}
+
+\maketitle
+
+\section{The Germ and Diagonal Symmetries}
+
+Consider the invertible polynomial of chain type
+\[
+  W(u,v)=u^5v+v^6=v(u^5+v^5),\qquad
+  A=\begin{pmatrix}5&1\\0&6\end{pmatrix},\qquad
+  |\det A|=30.
+\]
+Diagonal symmetries $(\lambda,\mu)\in(\mathbb{C}^*)^2$ satisfying $W(\lambda u,\mu v)=W(u,v)$ obey $\mu^6=1$ and $\lambda^5\mu=1$, yielding $|\mathrm{Aut}(W)|=|\det A|=30$ characters. The quasihomogeneous weights are $(1,1)$ of degree $6$, charges $q=(1/6,1/6)$, and central charge $\hat{c}=\sum(1-2q_i)=4/3$. The partial derivatives
+\[
+  \frac{\partial W}{\partial u}=5u^4v,\qquad \frac{\partial W}{\partial v}=u^5+6v^5
+\]
+vanish simultaneously only at $(0,0)$, confirming that $W$ is isolated at the origin.
+
+\section{Jacobian Algebra and Milnor Number $\mu(W)=25$}
+
+In characteristic $0$, $v^6\in(\partial W)$ since $v(\partial_v W)-\tfrac{1}{5}u(\partial_u W)=6v^6$. A reduced Gr\"obner basis over $\mathbb{Q}$ is
+\[
+  \bigl(v^6,\;u^5+6v^5,\;u^4v\bigr),
+\]
+with leading monomials $v^6$, $u^5$, and $u^4v$. The standard monomials of the Jacobian algebra $J_W=\mathbb{C}[u,v]/(\partial_u W,\partial_v W)$ are the $25$ monomials
+\[
+  \{u^i v^j : 0\le i\le 3,\; 0\le j\le 5\}\;\cup\;\{u^4\}.
+\]
+This matches the Milnor--Orlik quasihomogeneous formula $\mu(W)=(6/1-1)^2=25$. In particular, $\mu(W)\neq|\mathrm{Aut}(W)|$: the integer $30$ is the diagonal group order, whereas $25$ is the Jacobian dimension. On the chain $u^5v+v^q$ ($q=6$), the extra leading term $u^4v$ removes $u^4v,\dots,u^4v^5$ from the $5\times 6$ box, giving $\mu=|\det A|(1-1/q)=30\cdot\tfrac{5}{6}=25$.
+
+\section{The Berglund--H\"ubsch Transpose $W^T$ and the $+1$ Shift}
+
+The Berglund--H\"ubsch transpose has exponent matrix $A^T$:
+\[
+  W^T(u,v)=u^5+uv^6,\qquad
+  A^T=\begin{pmatrix}5&0\\1&6\end{pmatrix}.
+\]
+It is quasihomogeneous with weights $(3,2)$ and degree $15$, preserving $\hat{c}=4/3$ and $|\mathrm{Aut}(W^T)|=30$. Its partials are $\partial_u W^T=5u^4+v^6$ and $\partial_v W^T=6uv^5$. The eliminant identity
+\[
+  v^5(5u^4+v^6)-5u^3(uv^5)=v^{11}
+\]
+shows that the isolated pure-power and mixed leading monomials of $(\partial W^T)$ are
+\[
+  u^4,\qquad uv^5,\qquad v^{11}.
+\]
+The standard monomials are therefore the $11+3\cdot 5=26$ monomials
+\[
+  \{v^0,v^1,\dots,v^{10}\}\;\cup\;\{u,u^2,u^3\}\times\{v^0,v^1,v^2,v^3,v^4\},
+\]
+matching the weighted formula $\mu(W^T)=(15/3-1)(15/2-1)=4\cdot\tfrac{13}{2}=26$. Hence
+\[
+  \mu(W^T)=\mu(W)+1.
+\]
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Quantity} & $|\det A|$ & $\mu$ \\
+\midrule
+Meaning & Diagonal symmetry order & Jacobian dimension / vanishing cycles \\
+Chain atom $W=u^5v+v^6$ & $30$ & $25$ \\
+Transpose $W^T=u^5+uv^6$ & $30$ & $26$ \\
+Three-block sum $F$ & $30^3=27000$ & $25^3=15625$ \\
+Preserved by BHK transpose? & Yes & No ($+1$ shift) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Steenbrink Spectrum and Monodromy}
+
+For $W$ (weights $(1,1)$, degree $6$), the Steenbrink spectral numbers $\alpha=(i+j+2)/6$ on the $25$ standard monomials are
+\[
+  \tfrac{1}{3},\;\tfrac{1}{2},\;\tfrac{2}{3},\;\tfrac{5}{6},\;1,\;\tfrac{7}{6},\;\tfrac{4}{3},\;\tfrac{3}{2},\;\tfrac{5}{3}
+\]
+with multiplicities $1,2,3,4,5,4,3,2,1$ (sum $25$, mean $1$, symmetric about $1$). The characteristic polynomial of monodromy on $H_1$ of the Milnor fiber is
+\[
+  \Delta_W(t)=(t-1)^5(t+1)^4(t^2+t+1)^4(t^2-t+1)^4=(t^6-1)^4(t-1).
+\]
+For $W^T$ (weights $(3,2)$, degree $15$), the $26$ spectral numbers lie in $[1/3,5/3]$ with mean $1$ and an extra $+1$ at the center, yielding
+\[
+  \Delta_{W^T}(t)=\Phi_1(t)^2\Phi_3(t)^2\Phi_5(t)\Phi_{15}(t)^2=\frac{(t^{15}-1)^2(t-1)}{t^5-1}.
+\]
+
+\section{Why Incomplete Leading-Term Lists in a Box Print 31 and 35}
+
+In degree-graded reverse lexicographic order (\texttt{grlex}), the generator $5u^4+v^6$ has leading term $v^6$ in unweighted degree, or $5u^4$ if $v^{11}$ is not extracted as a separate leading power. Reducing a finite box $\{0\le i,j<N\}$ only against the incomplete pair $\{u^4,uv^5\}$ leaves the $v$-axis unbounded and counts $N+3\cdot 5=N+15$ monomials: for $N=16$ this prints $31$, and for $N=20$ it prints $35$. Enforcing $v^{11}\in(\partial W^T)$ replaces $N$ by $11$ and recovers the true invariant $\mu(W^T)=11+15=26$.
+
+\section{Scope Note}
+
+This note is a local singularity and Jacobian-algebra classification for $(W,W^T)$. It does not construct a Fourier--Mukai partner fourfold $Y\not\simeq V(F)$, does not construct a non-algebraic rational $(2,2)$ Hodge class on $V(F)$, and does not claim a proof or disproof of the rational Hodge conjecture.
+
+\begin{thebibliography}{9}
+\bibitem{BH93}
+P.~Berglund and T.~H\"ubsch, \emph{A generalized construction of mirror manifolds}, Nuclear Phys. B \textbf{393} (1993), 377--391.
+
+\bibitem{EGZ10}
+W.~Ebeling and S.~M. Gusein-Zade, \emph{Monodromy of dual invertible polynomials}, \texttt{arXiv:1008.4021}.
+
+\bibitem{KS92}
+M.~Kreuzer and H.~Skarke, \emph{On the classification of quasihomogeneous functions}, Comm. Math. Phys. \textbf{150} (1992), 137--147.
+
+\bibitem{MO70}
+J.~Milnor and P.~Orlik, \emph{Isolated singularities defined by weighted homogeneous polynomials}, Topology \textbf{9} (1970), 385--393.
+
+\bibitem{Ste76}
+J.~H.~M. Steenbrink, \emph{Mixed Hodge structure on the vanishing cohomology}, Real and complex singularities (Oslo, 1976), Sijthoff and Noordhoff, 1977, pp.~525--563.
+\end{thebibliography}
+
+\end{document}
