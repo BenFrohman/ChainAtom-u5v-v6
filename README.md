@@ -1,6 +1,9 @@
 # Chain atom u^5 v + v^6
 
-Author: Benjamin Stanley Frohman (@BenFrohman).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23627614.svg)](https://doi.org/10.5281/zenodo.23627614)
+
+Author: Benjamin Stanley Frohman (@BenFrohman, ORCID: [0009-0006-7068-3718](https://orcid.org/0009-0006-7068-3718)).
+Zenodo DOI: [`10.5281/zenodo.23627614`](https://doi.org/10.5281/zenodo.23627614).
 Copyright (c) 2026 Benjamin Stanley Frohman.
 License: Apache-2.0. See LICENSE / NOTICE if present; otherwise this header is the license notice.
 

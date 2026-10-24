@@ -17,3 +17,4 @@ abstract: >
   Isolated invertible plane-curve singularity W=u^5v+v^6.
   μ(W)=25, |Aut(W)|=30, μ(W^T)=26. Three copies give the locked sextic F.
   Not a Hodge miss.
+doi: "10.5281/zenodo.23627614"
