@@ -70,3 +70,7 @@ Not a fourfold. Not a class in Hdg^2(V(F)). Not Term A. Not Term B.
 - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23627613.svg)](https://doi.org/10.5281/zenodo.23627613) The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1 — all versions: [10.5281/zenodo.23627613](https://doi.org/10.5281/zenodo.23627613); latest version: [10.5281/zenodo.23627614](https://doi.org/10.5281/zenodo.23627614)
 - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23632797.svg)](https://doi.org/10.5281/zenodo.23632797) The Chain Atom W = u^5 v + v^6 and Three-Chain Jacobian Rings: Milnor Number 25, Diagonal Symmetry Order 30, and Explicit Monomial Bases — all versions: [10.5281/zenodo.23632797](https://doi.org/10.5281/zenodo.23632797); latest version: [10.5281/zenodo.23632798](https://doi.org/10.5281/zenodo.23632798)
 - [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23867605.svg)](https://doi.org/10.5281/zenodo.23867605) The chain atom W=u^5v+v^6: Milnor number 25, diagonal symmetry 30, and the transpose shift +1 — all versions: [10.5281/zenodo.23867605](https://doi.org/10.5281/zenodo.23867605); latest version: [10.5281/zenodo.23867606](https://doi.org/10.5281/zenodo.23867606)
+
+## Citation
+
+Cite this work with [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository" button). Zenodo DOI: [10.5281/zenodo.23627614](https://doi.org/10.5281/zenodo.23627614).
