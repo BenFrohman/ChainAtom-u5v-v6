@@ -3,7 +3,7 @@
 **Author:** Benjamin Stanley Frohman  
 **ORCID:** [0009-0006-7068-3718](https://orcid.org/0009-0006-7068-3718)  
 **Affiliation:** Independent Researcher  
-**X:** [@Investor0x](https://x.com/Investor0x)  
+**X:** [@Frohmanian](https://x.com/Frohmanian)  
 **GitHub:** [@BenFrohman](https://github.com/BenFrohman)  
 **Date:** 25 September 2026  
 **Copyright:** © 2026 Benjamin Stanley Frohman  

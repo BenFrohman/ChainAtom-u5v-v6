@@ -3,7 +3,7 @@
 **Author:** Benjamin Stanley Frohman  
 **Affiliation:** independent  
 **ORCID:** [0009-0006-7068-3718](https://orcid.org/0009-0006-7068-3718)  
-**Contact:** GitHub [@BenFrohman](https://github.com/BenFrohman), X [@Investor0x](https://x.com/Investor0x)  
+**Contact:** GitHub [@BenFrohman](https://github.com/BenFrohman), X [@Frohmanian](https://x.com/Frohmanian)  
 **Date:** 25 September 2026  
 **DOI:** [`10.5281/zenodo.23627614`](https://doi.org/10.5281/zenodo.23627614)  
 **License:** Apache License 2.0  
